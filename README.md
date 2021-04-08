@@ -3,13 +3,13 @@ Exercises developed for the Dell selection process.
 
 ### Assess your knowledge level on the following languages (1 = none; 5 = expert):
 
-Vanilla JS - 4
-jQuery - 4
-HTML/HTML5 - 4
-CSS/CSS3 - 4
-Ajax - 1
-AngularJS - 0
-Bootstrap - 4
+* Vanilla JS - 4
+* jQuery - 4
+* HTML/HTML5 - 4
+* CSS/CSS3 - 4
+* Ajax - 1
+* AngularJS - 0
+* Bootstrap - 4
 
 ### What is the width of a container with 100px of width and 5px of padding?
 

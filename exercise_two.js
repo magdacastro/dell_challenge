@@ -46,7 +46,11 @@ for (var i = 0; i < 4; i++) {
 
 //Cria uma função de auto-chamada que calcula a soma de todos os produtos listados na Power, Batteries & Adaptersseção e dispara um alerta com o resultado.
 (function () {
-  var prices = Array.from(document.querySelectorAll("span strong.force-strong")).map((el) => {
+  var h2 = Array.from(document.querySelectorAll("h2")).find((el) => { return el.innerText == "Power, Batteries & Adapters"; });
+
+  var findPrices = h2.parentElement.parentElement.parentElement.querySelectorAll("div.half-modules-inner-container div.half-hero-pricing");
+
+  var prices = Array.from(findPrices).map((el) => {
 
     return parseInt(el.innerText.replace(/[^0-9]/g, ""));
   });
@@ -58,5 +62,5 @@ for (var i = 0; i < 4; i++) {
 
   var priceFormat = sum / 100;
   priceFormat = `$${priceFormat}`.replace('.', ',');
-  alert("A soma dos itens que estão a venda é " + priceFormat);
+  alert("A soma dos itens que estão a venda na seção 'Power, Batteries & Adapters' é " + priceFormat);
 })();
