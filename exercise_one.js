@@ -15,8 +15,7 @@ cardColumns.map((el) => {
 });
 
 resourceLinks.querySelector("div.container:nth-child(2)").querySelectorAll("div.row > div");
-const paragraphTech = Array.from(resourceLinks.querySelector("div.container:nth-child(2)").querySelectorAll("div.row >
-div"));
+const paragraphTech = Array.from(resourceLinks.querySelector("div.container:nth-child(2)").querySelectorAll("div.row > div"));
 
 paragraphTech.map((el) => {
   el.classList.remove("col-md-6");
